@@ -13,7 +13,6 @@ subjectListing = 'https://student.mit.edu/catalog/index.cgi'
 subjectHTML = urllib.request.urlopen(subjectListing).read()
 
 def extract_links(html_content, base_url):
-    """Extracts and returns a list of absolute URLs from the given HTML content."""
     try:
         soup = BeautifulSoup(html_content, 'html.parser')
         links = set()
