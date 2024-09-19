@@ -1,3 +1,8 @@
+"""
+The purpose of this is to crawl the MIT subject listing site and,
+for each page of courses, to extract the course title.
+This model can be easily adapted to extract more information or edit functionality.
+"""
 import requests
 from bs4 import BeautifulSoup
 import urllib.request
